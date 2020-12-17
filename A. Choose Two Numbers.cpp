@@ -1,0 +1,21 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n,m;
+    cin>>n;
+    int *a=new int[n];
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
+    cin>>m;
+    int *b=new int[m];
+    for(int i=0;i<m;i++){
+        cin>>b[i];
+    }
+    sort(a,a+n);
+    sort(b,b+m);
+    cout<<a[n-1]<<" "<<b[m-1];
+    return 0;
+}
